@@ -1,0 +1,21 @@
+{
+  "name": "rebel",
+  "version": "1.0.0",
+  "description": "REactive Based Embedded Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:parcel": "parcel ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natalieolivo/rebel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natalieolivo/rebel/issues"
+  },
+  "homepage": "https://github.com/natalieolivo/rebel#readme"
+}
