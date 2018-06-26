@@ -21,28 +21,28 @@ class PageHeadline extends HTMLElement {
     }
 
     /**
-     * this method attaches the custom element to it's showowRoot
-     */
-    render() {
-        console.log('%crender custom element', 'color:green;font-weight:bold');
-        const div = document.createElement('h1');
-        div.textContent = this.text;
-        this.shadowRoot.appendChild(div)
-    }
-
-    /**
      * Once we connect the custom element with our script this fires
      */
     connectedCallback() {
-        console.log(`%cconnected Custom element`, 'color:orange');
+        console.log(`%cconnected Custom element Page Headline`, 'color:orange');
         this.createShadowRoot();
         this.text = this.getAttribute('customInput');
         this.addStyles();
         this.render();
     }
 
-    attributeChangedCallback(){
+    attributeChangedCallback() {
         console.log('input changed');
+    }
+
+    /**
+     * this method attaches the custom element to it's showowRoot
+     */
+    render() {
+        console.log('%crender custom element Page Headline', 'color:green;font-weight:bold');
+        const div = document.createElement('h1');
+        div.textContent = this.text;
+        this.shadowRoot.appendChild(div)
     }
 }
 
