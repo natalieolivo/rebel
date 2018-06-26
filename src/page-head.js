@@ -7,7 +7,7 @@ class PageHead extends HTMLElement {
     // Element functionality written in here
     let template = document.getElementById('page-head');
     let templateContent = template.content;
-    const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
+    const shadowRoot = this.attachShadow({ mode: 'open' }).appendChild(templateContent.cloneNode(true));
   }
 }
 
