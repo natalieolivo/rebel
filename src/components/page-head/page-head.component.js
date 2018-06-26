@@ -5,11 +5,6 @@ html = `<header class="l-masthead" data-header data-e2e-name="l-masthead" data-t
 // component functionality is encapsulated here
 class PageHead extends HTMLElement {
 
-  constructor() {
-    // Always call super first in constructor
-    super();
-  }
-
   addStyles() {
     const style = document.createElement('style');
     style.setAttribute('type', 'text/css');
@@ -29,7 +24,6 @@ class PageHead extends HTMLElement {
     this.createShadowRoot();
     this.render();
   }
-
 
 }
 
