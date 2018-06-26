@@ -23,7 +23,7 @@ class PageHeadline extends HTMLElement {
     /**
      * this method attaches the custom element to it's showowRoot
      */
-    render(){
+    render() {
         console.log('%crender custom element', 'color:green;font-weight:bold');
         const div = document.createElement('h1');
         div.textContent = this.text;
@@ -40,7 +40,17 @@ class PageHeadline extends HTMLElement {
         this.addStyles();
         this.render();
     }
+
+    attributeChangedCallback(){
+        console.log('input changed');
+    }
 }
 
 // Define the new element
-customElements.define('page-headline', PageHeadline);
+try {
+    customElements.define('page-headline', PageHeadline);
+} catch (error) {
+    const h3 = document.createElement('h3');
+    h3.innerHTML = "This site uses webcomponents which don't work in all browsers! Try this site in a browser that supports them!";
+    document.body.appendChild(h3);
+}
