@@ -30,13 +30,4 @@ export class TimerService {
         return this.count;
     }
 
-    init(state, speed, cb) {
-
-        if (state) {
-            this.start(speed, cb);
-        } else {
-            this.pause();
-        }
-    }
-
 }
