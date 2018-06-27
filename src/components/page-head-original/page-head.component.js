@@ -1,4 +1,10 @@
-// component functionality is encapsulated here
+// class HelloMessage extends React.Component {
+//     render() {
+//         return <div>Hello <x-search>{this.props.name}</x-search>!</div>;
+//     }
+// }
+
+//component functionality is encapsulated here
 class PageHead extends HTMLElement {
   constructor() {
     // Always call super first in constructor
