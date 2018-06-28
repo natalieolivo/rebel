@@ -2,3 +2,6 @@
 .cache/
 node_modules/
 dist/
+
+# system stuff
+.DS_Store

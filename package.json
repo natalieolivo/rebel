@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "REactive Based Embedded Library",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "lite-server": "^2.3.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:local": "lite-server",
-    "clean": "rm -rf ./dist"
+    "clean": "rm -rf ./dist",
+    "copy-component": "cp -r ./src/components/page-head-original/page-head.jsx ./dependancies/page-head.jsx",
+    "concat": "npm run copy-component && cat ./src/{react.development,react-dom.development,babel.min,custom-elements-es5-adapter}.* > ./src/support.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.3.0"
   },
   "author": "",
   "license": "ISC"
