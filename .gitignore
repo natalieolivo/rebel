@@ -5,3 +5,7 @@ dist/
 
 # system stuff
 .DS_Store
+
+# editor files
+.vscode/
+.idea/
